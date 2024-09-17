@@ -9,7 +9,7 @@ const state = {
   };
   
   const actions = {
-    fetchRecommendations({ commit }, query) {
+    fetchRecommendations({ commit }) {
       // API'den veri çekme işlemi simüle ediliyor (gerçek API ile değiştirilebilir)
       return new Promise((resolve) => {
         setTimeout(() => {
