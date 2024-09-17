@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-// Axios örneği oluşturma, gerekli ayarları yapma (baseURL gibi)
+// Axios örneğini oluşturma, gerekli ayarları yapma (baseURL gibi)
 const apiClient = axios.create({
-  baseURL: 'https://api.example.com',  // Gerçek API adresiyle değiştir
+  baseURL: process.env.VUE_APP_API_BASE_URL,  // .env dosyasından alınan baseURL
   headers: {
     'Content-Type': 'application/json',
   },
